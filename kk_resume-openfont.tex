@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Krishnakanth - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (24/04/2021)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{kk-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Krishnakanth}{Yachareni}{ \urlstyle{same}\href{https://krishnakanthyachareni.github.io/personal-website/}{krishnakanth.com} | \href{https://www.linkedin.com/in/yacharenikrishnakanth/}{linkedin://yacharenikrishnakanth}\\
+\href{mailto:yacharenikrishnakanth@gmail.com}{yacharenikrishnakanth@gmail.com} | 960.359.2104 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Southern Mississippi}
+\descript{MS in Computer Science}
+\location{Present | Hattiesburg, MS}
+\sectionsep
+
+\subsection{JNTU Hyderabad}
+\descript{BS in Computer Science}
+\location{May 2017 | Hyderabad, India}
+College of Engineering \\
+Manthani\\
+\location{ GPA: 3.8 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Facebook:// \href{https://www.facebook.com/yacharenikrishnakanth/}{\bf yacharenikrishnakanth} \\
+Github:// \href{https://github.com/KrishnakanthYachareni}{\bf KrishnakanthYachareni} \\
+LinkedIn://  \href{https://www.linkedin.com/in/yacharenikrishnakanth/}{\bf yacharenikrishnakanth} \\
+StackOverflow://  \href{https://stackoverflow.com/users/6436720/yachareni-krishnakanth}{\bf yachareni} \\
+Quora://  \href{https://www.quora.com/profile/Krishnakanth-Yachareni}{\bf Krishnakanth-Yachareni}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine Learning \\
+Advanced Algorithms \\
+Cryptography \\
+Advanced Robotic Systems \\
+Parallel and Distributed Computing \\
+\sectionsep
+
+\subsection{Undergraduate}
+Algorithms \& Data structures \\
+Operating Systems \\
+Compiler Design \\
+Computer Networks \\
+{\footnotesize \textit{\textbf{(Teaching Asst ) }}} \\
+BigData Analytics \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\bf Languages: }
+Java8 \textbullet{}  Python \textbullet{} Javascript \textbullet{}  Shell\\
+\location{\bf Back End: }
+JavaEE \textbullet{} Spring Framework        
+\textbullet{} MicroServices \textbullet{} REST/SOAP \textbullet{} Security\\ 
+\location{\bf Front End:}
+Angular \textbullet{} ReactJs \textbullet{} HTML5 \textbullet{} CSS3 \textbullet{} Bootstrap \textbullet{} Velocity\\
+\location{\bf Data Base:}
+SQL \textbullet{} NoSQL \textbullet{} PostgreSQL\textbullet{} Cassandra\\
+ \location{\bf Tools:}
+ Docker \textbullet{} Kubernates \textbullet{} Jenkins \textbullet{} Maven
+\location{\bf Familiar:}
+ NLP\textbullet{} CNN \textbullet{} Android \textbullet{}  Selenium
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{EPAM Systems}
+\descript{| Software Engineer }
+\location{Jan 2018 - June 2021 | Hyderabad, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked for Mastercard client, My role involved into exploration \& integration of various real-time global payment services such as PayPal, Visa, Amex, NPCI, MADA, FirstData.
+\item Developed the backend logic with a TDD approach and the frontend logic with the BDD approach.
+\item  Written backend unit test cases with Junit, Mockito and front-end with Jasmine, Karma.
+\item Worked with a variety of different languages, platforms, frameworks such as Java8, Spring Framework, Microservices, RESTful API, JSON/XML, JavaScript, Angular, SQL, NoSQL, Cassandra, Selenium and cucumber, Jenkins, Docker.
+\item Communicated with multi-disciplinary teams of engineers, architects, designers, product owners, and clients on a daily basis.
+\item Developed automation scripts.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tata Consultancy Services }
+\descript{| Assistant System Engineer}
+\location{June 2017 – Jan 2018 | Hyderabad, India}
+\begin{tightemize}
+\item 1 out of 1200 applicants chosen to be a TCS Fellow 2017.
+\item As a trainee attended the initial phase of ILP training on OOPs, Python, JavaEE.
+\item Collaborated with a small team of student designers to develop a new mini banking web application before graduating from the ILP training.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TASK/EXCITE,}
+\descript{| Software Engineering Intern }
+\location{May 2016 – Aug 2016 | Hyderabad, India}
+\begin{tightemize}
+\item A four month Summer Engineering Internship program organised by JNTUH in collaboration with Telangana Academy
+for skill and knowledge and The Hyderabad Software Enterprises Association.
+\item Developed real time IOT based android application called Ostello, wherein an interactive platform is provided for non-
+local people \& Hostel/Mansion.
+\item Users can search for appropriate hostel with preferences like time, fee location, booking and It’s all happen on client side and vendor side hostel management system with help of finger print scanner.
+\item Tools used in applications are Android, Python, PHP, MySQL, Java, and Raspberry Pi.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2018	     & top 1/500  & Best Software Engineer at EPAM Systems\\
+2017	     & 1\textsuperscript{st}/500  & TCS Coding Competition, Hyderabad\\ 
+2016	     & top 5/100  & Product Development Hackathon by TASK, HYSEA \\
+2011     & top 5 & State Level Online Chess competition \\
+\end{tabular}
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
